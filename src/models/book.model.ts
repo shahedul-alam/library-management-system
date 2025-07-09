@@ -41,4 +41,7 @@ bookSchema.statics.updateBooksAfterBorrow = function (
   });
 };
 
-export const Book = model<IBook, Model<IBook> & BookStaticMethods>("Book", bookSchema);
+export const Book = model<IBook, Model<IBook> & BookStaticMethods>(
+  "Book",
+  bookSchema
+);
