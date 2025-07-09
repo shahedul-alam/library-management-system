@@ -47,16 +47,15 @@ A comprehensive Library Management System built with Express, TypeScript, and Mo
 library-management-system/
 ├── src/
 │   ├── models/
-│   │   ├── Book.ts
-│   │   └── Borrow.ts
-│   ├── routes/
-│   │   ├── bookRoutes.ts
-│   │   └── borrowRoutes.ts
+│   │   ├── book.model.ts
+│   │   └── borrow.model.ts
+│   ├── interfaces/
+│   │   ├── book.interface.ts
+│   │   └── borrow.interface.ts
 │   ├── controllers/
-│   │   ├── bookController.ts
-│   │   └── borrowController.ts
-│   ├── middleware/
-│   ├── utils/
+│   │   ├── book.controller.ts
+│   │   └── borrow.controller.ts
+│   ├── app.ts
 │   └── server.ts
 ├── package.json
 ├── tsconfig.json
@@ -72,7 +71,7 @@ library-management-system/
 
 ### Step 1: Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/shahedul-alam/library-management-system.git
 cd library-management-system
 ```
 
@@ -235,10 +234,6 @@ The API returns consistent error responses:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the ISC License.
 
 ## 🆘 Support
 
